@@ -18,12 +18,12 @@ spec:
       - name: banking-eta-container
         image: bsvk38/bankapp-eta-app:latest
         ports:
-        - containerPort: 8081
+        - containerPort: 8082
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: banking-eta-service
+  name: banking-eta-np-service
   labels:
     app: banking-eta-app
 spec:
@@ -33,5 +33,5 @@ spec:
   type: NodePort
   ports:
   - nodePort: 31033
-    port: 8081
-    targetPort: 8081
+    port: 8082
+    targetPort: 8082
