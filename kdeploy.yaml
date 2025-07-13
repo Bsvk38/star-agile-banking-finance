@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: banking-eta-app-deploy
   labels:
-    app: banking-eta-app-deploy-lbl
+    app: banking-eta-app
 spec:
   replicas: 3
   selector:
